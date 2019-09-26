@@ -1,0 +1,26 @@
+---
+title: "Gapminder Data"
+author: "Bridger Gordon"
+date: "9/26/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(gapminder)
+```
+
+## R Markdown
+
+asdf
+
+```{r}
+
+gapminder %>%
+  filter(year == 1962)
+ggplot(gapminder, aes(x=gdpPercap, y=lifeExp)) +
+  geom_point() +
+  scale_x_log10()
+
+```
